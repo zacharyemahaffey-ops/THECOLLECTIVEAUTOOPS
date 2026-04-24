@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 3: Horizon</title>
+  <style>
+    :root {
+      --bg: linear-gradient(150deg, #eaf2fb 0%, #d8e4f5 45%, #c9d9ec 100%);
+      --panel: rgba(247, 251, 255, 0.86);
+      --ink: #203249;
+      --muted: #5a6f85;
+      --accent: #416f9f;
+      --line: rgba(32, 50, 73, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      font-family: "Book Antiqua", Palatino, serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top center, rgba(255, 255, 255, 0.74), transparent 25%),
+        var(--bg);
+    }
+
+    .page {
+      width: min(800px, 100%);
+      padding: 34px;
+      border-radius: 34px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      box-shadow: 0 26px 64px rgba(32, 50, 73, 0.13);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(65, 111, 159, 0.12);
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.82rem;
+    }
+
+    h1 {
+      margin: 16px 0 14px;
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1;
+    }
+
+    p {
+      margin: 0 0 15px;
+      line-height: 1.8;
+      color: var(--muted);
+      font-size: 1.04rem;
+    }
+
+    .panel {
+      margin-top: 22px;
+      padding: 20px;
+      border-radius: 24px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(223, 234, 247, 0.92));
+    }
+  </style>
+</head>
+<body>
+  <article class="page">
+    <a href="index.html">Back to collection</a>
+    <div class="tag">Hannah &amp; Co. Trilogy</div>
+    <h1>Part 3: Horizon</h1>
+    <p>The final page opens the windows. The team looks out beyond what is finished and starts noticing what is now possible because the foundation was built with care.</p>
+    <p>There are new partners to meet, better tools to try, and wider communities to support. Even so, the chapter never rushes the future. It treats expansion as something that should feel earned, clear, and human at every step.</p>
+    <div class="panel">
+      <strong>Read-along cue</strong>
+      <p>Pay attention to how the chapter turns readiness into invitation. It is less about chasing the horizon than being prepared to meet it.</p>
+    </div>
+  </article>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PROJECT TC_BDSV: The Strategic Insider</title>
+  <style>
+    :root {
+      --bg: #040704;
+      --panel: #081108;
+      --ink: #7aff7a;
+      --soft: #3ed93e;
+      --line: rgba(122, 255, 122, 0.35);
+      --alert: #d6ff77;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      padding: 24px;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(circle at top center, rgba(60, 255, 60, 0.12), transparent 20%),
+        repeating-linear-gradient(180deg, rgba(0, 255, 0, 0.05) 0, rgba(0, 255, 0, 0.05) 1px, transparent 1px, transparent 4px),
+        var(--bg);
+      color: var(--ink);
+      font-family: Consolas, "Courier New", monospace;
+    }
+
+    .console {
+      width: min(860px, 100%);
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: linear-gradient(180deg, rgba(8, 17, 8, 0.96), rgba(4, 7, 4, 0.98));
+      box-shadow: 0 0 0 1px rgba(122, 255, 122, 0.08), 0 20px 50px rgba(0, 0, 0, 0.45);
+    }
+
+    a {
+      color: var(--alert);
+      text-decoration: none;
+    }
+
+    h1 {
+      margin: 18px 0 18px;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      text-shadow: 0 0 12px rgba(122, 255, 122, 0.28);
+    }
+
+    .panel {
+      border: 1px solid var(--line);
+      padding: 16px;
+      background: rgba(0, 0, 0, 0.26);
+    }
+
+    .panel h2 {
+      margin: 0 0 14px;
+      font-size: 1.2rem;
+    }
+
+    .phase-list {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .phase {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 10px 12px;
+      border: 1px solid rgba(122, 255, 122, 0.16);
+      background: rgba(7, 21, 7, 0.72);
+    }
+
+    .status {
+      font-size: 0.92rem;
+    }
+
+    .active {
+      color: var(--alert);
+    }
+
+    .pending {
+      color: #7fd47f;
+    }
+
+    .locked {
+      color: #4f8a4f;
+    }
+
+    .meter {
+      margin: 16px 0 20px;
+      color: var(--alert);
+    }
+
+    .countdown {
+      margin-top: 22px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      font-size: clamp(1.2rem, 4vw, 1.7rem);
+      letter-spacing: 0.08em;
+    }
+
+    .footer {
+      margin-top: 14px;
+      color: var(--soft);
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <main class="console">
+    <a href="index.html">[ return to collection ]</a>
+    <h1>PROJECT TC_BDSV: THE STRATEGIC INSIDER</h1>
+
+    <section class="panel">
+      <h2>PHASE ROLLOUT: <span id="meter-text">[|||||-----] 50%</span></h2>
+      <div class="meter" aria-hidden="true">SYSTEM GRAPH: [|||||-----]</div>
+      <ul class="phase-list">
+        <li class="phase">
+          <span>&gt; Phase 1: Noise &amp; Light Discipline</span>
+          <strong class="status active">ACTIVE</strong>
+        </li>
+        <li class="phase">
+          <span>&gt; Phase 2: Glitch Aesthetic Injection</span>
+          <strong class="status pending">PENDING</strong>
+        </li>
+        <li class="phase">
+          <span>&gt; Phase 3: Total Blackout</span>
+          <strong class="status locked">LOCKED</strong>
+        </li>
+        <li class="phase">
+          <span>&gt; Phase 4: Revenue Engine Engagement</span>
+          <strong class="status locked">LOCKED</strong>
+        </li>
+      </ul>
+    </section>
+
+    <div class="countdown" id="countdown">COUNTDOWN TO BLACKOUT: 04:22:11</div>
+    <p class="footer">Maintain operational security. N4 engine is primed.</p>
+  </main>
+
+  <script>
+    const countdownElement = document.getElementById("countdown");
+    const meterText = document.getElementById("meter-text");
+    let remainingSeconds = (4 * 60 * 60) + (22 * 60) + 11;
+
+    function formatCountdown(totalSeconds) {
+      const hours = String(Math.floor(totalSeconds / 3600)).padStart(2, "0");
+      const minutes = String(Math.floor((totalSeconds % 3600) / 60)).padStart(2, "0");
+      const seconds = String(totalSeconds % 60).padStart(2, "0");
+      return hours + ":" + minutes + ":" + seconds;
+    }
+
+    function updateCountdown() {
+      countdownElement.textContent = "COUNTDOWN TO BLACKOUT: " + formatCountdown(remainingSeconds);
+
+      if (remainingSeconds > 0) {
+        remainingSeconds -= 1;
+      } else {
+        countdownElement.textContent = "COUNTDOWN TO BLACKOUT: 00:00:00";
+        meterText.textContent = "[||||||||||] 100%";
+      }
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 1: Collaboration</title>
+  <style>
+    :root {
+      --bg: linear-gradient(150deg, #f6efe1 0%, #eadfcf 48%, #d6d8cc 100%);
+      --panel: rgba(255, 252, 246, 0.84);
+      --ink: #27312e;
+      --muted: #66736f;
+      --accent: #bb6a3f;
+      --line: rgba(39, 49, 46, 0.13);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      color: var(--ink);
+      background: var(--bg);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .page {
+      width: min(780px, 100%);
+      padding: 30px;
+      border-radius: 30px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 26px 60px rgba(39, 49, 46, 0.15);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .label {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(187, 106, 63, 0.12);
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.82rem;
+    }
+
+    h1 {
+      margin: 0 0 14px;
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 0.98;
+    }
+
+    p {
+      margin: 0 0 14px;
+      line-height: 1.75;
+      color: var(--muted);
+      font-size: 1.04rem;
+    }
+
+    .quote {
+      margin: 22px 0;
+      padding: 18px 20px;
+      border-left: 4px solid var(--accent);
+      background: rgba(255, 255, 255, 0.55);
+      border-radius: 0 18px 18px 0;
+      color: var(--ink);
+    }
+  </style>
+</head>
+<body>
+  <article class="page">
+    <a href="index.html">Back to collection</a>
+    <div class="label">Hannah &amp; Co. Trilogy</div>
+    <h1>Part 1: Collaboration</h1>
+    <p>Morning settles over the shared workspace in a quiet amber glow. Hannah arrives with a notebook, three bright ideas, and the steady habit of making room for every voice before the work begins.</p>
+    <p>The Node Operators gather around a long table, trading observations instead of interruptions. One person maps the issue, another sketches the next step, and a third keeps the group anchored to what will actually help people on the other side of the screen.</p>
+    <div class="quote">Read-along cue: listen for the moment the chapter stops sounding like task management and starts sounding like trust.</div>
+    <p>By the end of the session, nobody is carrying the whole system alone. The progress is real, but so is the feeling in the room: calm, connected, and ready for the next part of the story.</p>
+  </article>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Part 2: Wellness</title>
+  <style>
+    :root {
+      --bg: linear-gradient(160deg, #edf6ef 0%, #dbeadf 50%, #cfddd3 100%);
+      --panel: rgba(247, 252, 247, 0.86);
+      --ink: #1f3129;
+      --muted: #567066;
+      --accent: #4f8b67;
+      --line: rgba(31, 49, 41, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background:
+        radial-gradient(circle at top right, rgba(255, 255, 255, 0.66), transparent 28%),
+        var(--bg);
+      font-family: "Palatino Linotype", Palatino, serif;
+      color: var(--ink);
+    }
+
+    .page {
+      width: min(780px, 100%);
+      padding: 32px;
+      border-radius: 32px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      box-shadow: 0 24px 60px rgba(31, 49, 41, 0.13);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    h1 {
+      margin: 14px 0 16px;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(79, 139, 103, 0.12);
+      color: var(--accent);
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    p {
+      margin: 0 0 15px;
+      color: var(--muted);
+      line-height: 1.8;
+      font-size: 1.04rem;
+    }
+
+    .breather {
+      display: grid;
+      gap: 10px;
+      margin-top: 24px;
+      padding: 18px;
+      border-radius: 22px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.74), rgba(231, 244, 235, 0.9));
+    }
+  </style>
+</head>
+<body>
+  <article class="page">
+    <a href="index.html">Back to collection</a>
+    <div class="tag">Hannah &amp; Co. Trilogy</div>
+    <h1>Part 2: Wellness</h1>
+    <p>The middle chapter lowers the volume on purpose. Schedules loosen just enough for people to drink water, step outside, and return to the work as themselves instead of as exhausted versions of who they were that morning.</p>
+    <p>Hannah reframes wellness as infrastructure. Rest is not an interruption. A pause is not a delay. The team learns that the most reliable systems are often built by people who trust their own limits and respect each other's pace.</p>
+    <div class="breather">
+      <strong>Read-along cue</strong>
+      <span>Notice how the strongest moment in this part comes from choosing steadiness over urgency.</span>
+    </div>
+  </article>
+</body>
+</html>
