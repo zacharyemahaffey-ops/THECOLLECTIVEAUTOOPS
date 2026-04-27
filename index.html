@@ -3,17 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index Hub</title>
+    <title>THE COLLECTIVE | OPS HUB</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #0f172a; color: #f8fafc; font-family: 'Inter', sans-serif; }
+        .card { background: #1e293b; border: 1px solid #334155; transition: all 0.3s ease; }
+        .card:hover { border-color: #38bdf8; transform: translateY(-2px); }
+    </style>
 </head>
-<body>
-    <h1>Welcome to the Collections Hub</h1>
-    <ul>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="n8-creative-forge.html">N8 Creative Forge</a></li>
-        <li><a href="part-1-collaboration.html">Part 1: Collaboration</a></li>
-        <li><a href="part-2-wellness.html">Part 2: Wellness</a></li>
-        <li><a href="part-3-horizon.html">Part 3: Horizon</a></li>
-        <li><a href="project-tc-bdsv.html">Strategic Insider Terminal</a></li>
-    </ul>
+<body class="p-8">
+    <div class="max-w-4xl mx-auto">
+        <header class="mb-12 border-b border-slate-700 pb-6">
+            <h1 class="text-3xl font-bold tracking-tight text-sky-400">THE COLLECTIVE AUTO | OPS</h1>
+            <p class="text-slate-400 mt-2">Sovereign Node Operational Interface</p>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Operator Dashboard Link -->
+            <a href="https://colhorizon-m9clvtso.manus.space/" target="_blank" class="card p-6 rounded-xl block group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="p-3 bg-sky-500/10 rounded-lg text-sky-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                        </svg>
+                    </div>
+                    <span class="text-xs font-bold text-sky-500 uppercase tracking-wider">LIVE</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2 group-hover:text-sky-400">Operator Dashboard</h3>
+                <p class="text-slate-400 text-sm">Real-time tactical visualization and node management interface.</p>
+            </a>
+
+            <!-- Wellness Portal -->
+            <a href="gemini-code-1776977710930.html" class="card p-6 rounded-xl block group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="p-3 bg-emerald-500/10 rounded-lg text-emerald-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold mb-2 group-hover:text-emerald-400">Wellness Portal</h3>
+                <p class="text-slate-400 text-sm">Hannah & Co. Trilogy: Collaboration, Wellness, and Horizon.</p>
+            </a>
+
+            <!-- Insider Terminal -->
+            <a href="project-tc-bdsv.html" class="card p-6 rounded-xl block group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="p-3 bg-amber-500/10 rounded-lg text-amber-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold mb-2 group-hover:text-amber-400">Insider Terminal</h3>
+                <p class="text-slate-400 text-sm">Secure strategic data and classified project insights.</p>
+            </a>
+
+            <!-- Creative Forge -->
+            <a href="n8-creative-forge.html" class="card p-6 rounded-xl block group">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="p-3 bg-purple-500/10 rounded-lg text-purple-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 00-1 1v1a2 2 0 11-4 0v-1a1 1 0 00-1-1H7a1 1 0 01-1-1v-3a1 1 0 011-1h1a2 2 0 100-4H7a1 1 0 01-1-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+                        </svg>
+                    </div>
+                </div>
+                <h3 class="text-xl font-bold mb-2 group-hover:text-purple-400">N8 Creative Forge</h3>
+                <p class="text-slate-400 text-sm">Node Ops dashboard for content creation and strategic media.</p>
+            </a>
+        </div>
+
+        <footer class="mt-12 pt-8 border-t border-slate-800 text-center">
+            <p class="text-slate-500 text-xs tracking-widest uppercase">Collective Auto Sovereign Network | 2026</p>
+        </footer>
+    </div>
 </body>
 </html>
